@@ -1,10 +1,10 @@
-#include<unistd.h>
-#include<netinet/in.h>
-#include<stdlib.h>
-#include<stdio.h>
-#include<string.h>
-#include<sys/socket.h>
-#include<errno.h>
+#include <unistd.h>
+#include <netinet/in.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <sys/socket.h>
+#include <errno.h>
 
 int main()
 {
@@ -37,7 +37,4 @@ int main()
 	setsockopt(identifier,SOL_SOCKET,SO_OOBINLINE,&on,sizeof(on));
 	status=sockatmark(identifier);
 	printf("Status:%d\n",status);
-
-	
-	
 }
